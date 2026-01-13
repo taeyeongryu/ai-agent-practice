@@ -17,13 +17,23 @@
 ## 🚀 시작하기
 
 ### 1. 환경 설정
-이 프로젝트는 Python 3.13.2 버전을 사용합니다.
+이 프로젝트는 **Python 3.13.2** 버전을 사용합니다.
 
-```powershell
-# 가상환경 활성화 (Windows)
-.\.venv\Scripts\activate
+**가상환경 생성 및 활성화:**
 
-# 의존성 설치
+- **Windows:**
+  ```powershell
+  python -m venv .venv
+  .\.venv\Scripts\activate
+  ```
+- **Mac / Linux:**
+  ```bash
+  python3 -m venv .venv
+  source .venv/bin/activate
+  ```
+
+**의존성 설치:**
+```bash
 pip install -r requirements.txt
 ```
 
