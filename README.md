@@ -46,7 +46,18 @@ pip install -r requirements.txt
 ```
 
 ### 2. 환경 변수 설정
-루트 폴더에 `.env` 파일을 생성하고 API 키를 입력하세요.
+`.env.example` 파일을 복사하여 `.env` 파일을 생성하고, 발급받은 API 키를 입력하세요.
+
+**Windows:**
+```powershell
+copy .env.example .env
+```
+
+**Mac / Linux:**
+```bash
+cp .env.example .env
+```
+
 ```env
 OPEN_API_KEY=your_actual_api_key_here
 ```
