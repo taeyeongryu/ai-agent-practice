@@ -11,7 +11,11 @@
 - 실전 에이전트 서비스 구현 및 배포 실습
 
 ## 📂 프로젝트 구조
-- **chapter1/**: OpenAI API 기초 (Hello World 실습)
+- **chapter1/**: OpenAI API 기초 및 실습
+    - `hello_openai.py`: 기본적인 텍스트 생성 실습
+    - `hello_openai_responses.py`: OpenAI Responses API 활용 실습
+    - `hello_openai_streaming.py`: 스트리밍(Streaming) 방식의 응답 구현
+    - `async_llm_api.py`: `asyncio`를 이용한 비동기 API 호출 병렬 처리
 - **.venv/**: 프로젝트 전용 가상환경 (Python 3.13.2)
 
 ## 🚀 시작하기
