@@ -9,6 +9,7 @@ venv.bak/
 # Environment Variables (Sensitive Data)
 .env
 .env.*
+!.env.example
 
 # Python Cache
 __pycache__/
