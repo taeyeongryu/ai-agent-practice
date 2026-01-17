@@ -20,6 +20,13 @@
     - `hello_openai_streaming.py`: 스트리밍(Streaming) 방식의 응답 구현
     - `async_llm_api.py`: `asyncio`를 이용한 비동기 API 호출 병렬 처리
   </details>
+- **chapter2/**: 페르소나 챗봇 만들기 (어린 왕자)
+  <details>
+  <summary>세부 파일 목록</summary>
+
+    - `chatbot3_little_prince.py`: CLI 기반의 어린 왕자 페르소나 챗봇
+    - `chatbot4_little_prince_web_ui.py`: FastAPI를 활용한 웹 UI 버전 챗봇
+  </details>
 - **.venv/**: 프로젝트 전용 가상환경 (Python 3.13.2)
 
 ## 🚀 시작하기
