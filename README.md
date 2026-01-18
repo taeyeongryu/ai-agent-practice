@@ -33,6 +33,11 @@
 
     - `hello_langchain.py`: LangChain을 이용한 기본 Chat Model 호출 실습
     - `langchain_messages.py`: System, Human, AI Message 객체 활용 실습
+    - `langchain_prompt_template_and_output_parser.py`: PromptTemplate과 OutputParser를 활용한 체인 구성
+    - `langchain_runnable_lambda.py`: 사용자 정의 함수(Python Function)를 체인에 통합하는 방법
+    - `langchain_runnable_parallel.py`: 여러 작업을 병렬로 수행하는 RunnableParallel 실습
+    - `langchain_runnable_passthrough.py`: 체인 중간에 데이터를 그대로 전달하거나 추가하는 기법
+    - `langchain_structured_output.py`: Pydantic을 활용한 구조화된 데이터(JSON) 출력 실습
   </details>
 - **.venv/**: 프로젝트 전용 가상환경 (Python 3.13.2)
 
