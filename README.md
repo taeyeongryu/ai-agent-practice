@@ -27,6 +27,12 @@
     - `chatbot3_little_prince.py`: CLI 기반의 어린 왕자 페르소나 챗봇
     - `chatbot4_little_prince_web_ui.py`: FastAPI를 활용한 웹 UI 버전 챗봇
   </details>
+- **chapter3/**: 랭체인(LangChain) 입문
+  <details>
+  <summary>세부 파일 목록</summary>
+
+    - `hello_langchain.py`: LangChain을 이용한 기본 Chat Model 호출 실습
+  </details>
 - **.venv/**: 프로젝트 전용 가상환경 (Python 3.13.2)
 
 ## 🚀 시작하기
