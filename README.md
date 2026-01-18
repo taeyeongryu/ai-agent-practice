@@ -32,6 +32,7 @@
   <summary>세부 파일 목록</summary>
 
     - `hello_langchain.py`: LangChain을 이용한 기본 Chat Model 호출 실습
+    - `langchain_messages.py`: System, Human, AI Message 객체 활용 실습
   </details>
 - **.venv/**: 프로젝트 전용 가상환경 (Python 3.13.2)
 
