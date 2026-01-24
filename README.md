@@ -37,6 +37,7 @@
     - `langchain_runnable_lambda.py`: 사용자 정의 함수(Python Function)를 체인에 통합하는 방법
     - `langchain_runnable_parallel.py`: 여러 작업을 병렬로 수행하는 RunnableParallel 실습
     - `langchain_runnable_passthrough.py`: 체인 중간에 데이터를 그대로 전달하거나 추가하는 기법
+    - `langchain_runnable_branch.py`: 입력 조건에 따라 다른 체인을 실행하는 분기 처리 실습
     - `langchain_structured_output.py`: Pydantic을 활용한 구조화된 데이터(JSON) 출력 실습
   </details>
 - **.venv/**: 프로젝트 전용 가상환경 (Python 3.13.2)
@@ -78,7 +79,7 @@ cp .env.example .env
 ```
 
 ```env
-OPEN_API_KEY=your_actual_api_key_here
+OPENAI_API_KEY=your_actual_api_key_here
 ```
 
 ---
