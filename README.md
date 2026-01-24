@@ -39,6 +39,13 @@
     - `langchain_runnable_passthrough.py`: 체인 중간에 데이터를 그대로 전달하거나 추가하는 기법
     - `langchain_runnable_branch.py`: 입력 조건에 따라 다른 체인을 실행하는 분기 처리 실습
     - `langchain_structured_output.py`: Pydantic을 활용한 구조화된 데이터(JSON) 출력 실습
+    - **embedding/**: 텍스트 임베딩 및 벡터 데이터베이스 실습
+      - `my_first_embedding.py`: OpenAI를 이용한 텍스트 임베딩 생성 및 코사인 유사도 계산 기초
+      - `embedding_with_vectorstore.py`: FAISS 벡터스토어를 활용한 텍스트 검색 및 유사도 계산
+      - `vectorstore_with_document.py`: Document 객체를 활용한 벡터스토어 구축 및 검색
+      - `retriever_from_vectorstore.py`: 벡터스토어를 리트리버(Retriever)로 변환하여 RAG 체인 구성
+    - **retriever_rag/**: 리트리버 기반의 RAG(Retrieval-Augmented Generation) 실습
+      - `rag_by_duckduckgo.py`: DuckDuckGo 검색 도구를 활용한 실시간 웹 정보 기반 RAG 구현
   </details>
 - **.venv/**: 프로젝트 전용 가상환경 (Python 3.13.2)
 
