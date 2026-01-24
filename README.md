@@ -47,6 +47,17 @@
     - **retriever_rag/**: 리트리버 기반의 RAG(Retrieval-Augmented Generation) 실습
       - `rag_by_duckduckgo.py`: DuckDuckGo 검색 도구를 활용한 실시간 웹 정보 기반 RAG 구현
   </details>
+- **chapter4/**: OpenAI 에이전트 및 멀티 에이전트 실습
+  <details>
+  <summary>세부 파일 목록</summary>
+
+    - **openai-agent-sdk/**: OpenAI의 실험적 Swarm 프레임워크 스타일 구현
+      - `hello_agent_sync.py`: 기본적인 동기식 에이전트 실행
+      - `news_search_agent.py`: 외부 도구(DuckDuckGo)를 사용하는 뉴스 검색 에이전트
+      - `input_output_guardrail_test.py`: 입출력 가드레일 테스트
+      - `simple_multi_agent_by_handoff.py`: **Handoff** 패턴을 이용한 간단한 병원 안내 멀티 에이전트
+        > **Note:** 이 코드는 OpenAI Swarm 스타일로, 객체(`Agent`) 중심의 직관적인 구현을 보여줍니다. 복잡한 상태 관리와 제어가 필요한 경우 **LangGraph**(Node 함수 중심)가 더 적합할 수 있습니다.
+  </details>
 - **.venv/**: 프로젝트 전용 가상환경 (Python 3.13.2)
 
 ## 🚀 시작하기
