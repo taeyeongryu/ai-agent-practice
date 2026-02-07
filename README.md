@@ -9,6 +9,7 @@
 - AI 에이전트의 핵심 원리 이해
 - LLM(Large Language Model) API 활용 능력 배양
 - 실전 에이전트 서비스 구현 및 배포 실습
+- LangGraph를 활용한 복잡한 워크플로우 제어 습득
 
 ## 📂 프로젝트 구조
 - **chapter1/**: OpenAI API 기초 및 실습
@@ -47,7 +48,7 @@
     - **retriever_rag/**: 리트리버 기반의 RAG(Retrieval-Augmented Generation) 실습
       - `rag_by_duckduckgo.py`: DuckDuckGo 검색 도구를 활용한 실시간 웹 정보 기반 RAG 구현
   </details>
-- **chapter4/**: OpenAI 에이전트 및 멀티 에이전트 실습
+- **chapter4/**: OpenAI 에이전트 실습
   <details>
   <summary>세부 파일 목록</summary>
 
@@ -55,10 +56,41 @@
       - `hello_agent_sync.py`: 기본적인 동기식 에이전트 실행
       - `news_search_agent.py`: 외부 도구(DuckDuckGo)를 사용하는 뉴스 검색 에이전트
       - `input_output_guardrail_test.py`: 입출력 가드레일 테스트
-      - `simple_multi_agent_by_handoff.py`: **Handoff** 패턴을 이용한 간단한 병원 안내 멀티 에이전트
-        > **Note:** 이 코드는 OpenAI Swarm 스타일로, 객체(`Agent`) 중심의 직관적인 구현을 보여줍니다. 복잡한 상태 관리와 제어가 필요한 경우 **LangGraph**(Node 함수 중심)가 더 적합할 수 있습니다.
+      - `simple_multi_agent_by_handoff.py`: Handoff 패턴을 이용한 멀티 에이전트
   </details>
-- **.venv/**: 프로젝트 전용 가상환경 (Python 3.13.2)
+- **chapter5/**: 구글 AI 에이전트 실습
+  <details>
+  <summary>세부 파일 목록</summary>
+
+    - `hello-agent/`: Google의 Agent SDK 기반 기초 실습
+    - `multi-agent-for-bestselller-book/`: 베스트셀러 도구 검색 멀티 에이전트
+  </details>
+- **chapter6/**: 랭그래프(LangGraph) 심화
+  <details>
+  <summary>세부 파일 목록</summary>
+
+    - `02_conditional_routing.py`: 조건부 라우팅 구현
+    - `03_persistent_memory.py`: 영구 메모리(Checkpointer) 활용
+    - `04_loop_workflow.py`: 순환(Loop) 워크플로우 제어
+    - `06_tool_calling.py`: 에이전트의 도구 호출 메커니즘
+    - `07_human_in_loop.py`: 인간 개입(Interrupt/Breakpoints) 시스템
+  </details>
+- **chapter9/**: 실전 프로젝트 - Google News AI 멀티에이전트
+  <details>
+  <summary>시스템 특징</summary>
+
+    - **RSSCollector**: 구글 뉴스 RSS 수집 및 실제 본문 스크래핑
+    - **Summarizer**: 수집된 뉴스 내용 요약 (OpenAI 활용)
+    - **Organizer**: 카테고리 분류 및 중복 기사 정리
+    - **Reporter**: 최종 마크다운 형식의 일일 뉴스 리포트 생성
+  </details>
+- **chapter10/**: MCP(Model Context Protocol) 시스템
+  <details>
+  <summary>시스템 구성</summary>
+
+    - `mcp_server.py`: FastMCP를 이용한 도구 제공 서버 (날씨, 뉴스, 야구 순위 등)
+    - `chat_agent.py`: MCP 서버에 연결된 스트리밍 채팅 에이전트 및 웹 UI (FastAPI)
+  </details>
 
 ## 🚀 시작하기
 
@@ -72,11 +104,6 @@
   python -m venv .venv
   .\.venv\Scripts\activate
   ```
-- **Mac / Linux:**
-  ```bash
-  python3 -m venv .venv
-  source .venv/bin/activate
-  ```
 
 **의존성 설치:**
 ```bash
@@ -84,21 +111,11 @@ pip install -r requirements.txt
 ```
 
 ### 2. 환경 변수 설정
-`.env.example` 파일을 복사하여 `.env` 파일을 생성하고, 발급받은 API 키를 입력하세요.
-
-**Windows:**
-```powershell
-copy .env.example .env
-```
-
-**Mac / Linux:**
-```bash
-cp .env.example .env
-```
+`.env` 파일에 발급받은 API 키를 입력하세요.
 
 ```env
 OPENAI_API_KEY=your_actual_api_key_here
 ```
 
 ---
-*본 레포지토리는 개인적인 학습 목적으로 운영됩니다.*
+*본 레포지토리는 개인적인 학습 목적으로 운영되며 모든 클론 코딩 실습이 완료되었습니다.*
